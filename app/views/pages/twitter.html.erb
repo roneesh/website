@@ -1,2 +1,9 @@
 <h1>Pages#twitter</h1>
-<p>Find me in app/views/pages/twitter.html.erb</p>
+
+<p> Latest 100 Tweets: </p>
+
+<ul>
+<% @tweets.each do |tweet| %>
+	<li> <%= tweet.text %> </li>
+<%end%>
+

@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class PagesController < ApplicationController
   def home
   end
@@ -14,7 +16,8 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def twitter
+  def twitter  
+    @tweets = Twitter.user_timeline("roneesh", count: 100)
   end
 
   def writing
@@ -22,5 +25,5 @@ class PagesController < ApplicationController
 
   def blog
   end
-  
+
 end
