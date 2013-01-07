@@ -1,6 +1,6 @@
 Roneeshwebsite::Application.routes.draw do
 
-  root :to => 'pages/home'
+  root :to => 'pages#home'
 
   get "pages/home"
   get "/home", { controller: "Pages", action: "home" }
