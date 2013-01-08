@@ -9,15 +9,15 @@
 <%= form_for @message, :as => :post, :url => "/contact" do |f| %>
 
 	<%= f.label :name %><br/>
-	<%= f.text_field :name %><br/>
+	<%= f.text_field :name, :required => true %><br/>
 
 	<%= f.label :email %><br/>
-	<%= f.text_field :email %><br/>
+	<%= f.text_field :email, :required => true %><br/>
 
 	<%= f.label :content, "Your message here." %><br/>
-	<%= f.text_area :content, size: "22x10" %><br/>
+	<%= f.text_area :content, size: "22x10", :required => true %><br/>
 
-	<input type="submit" name="message_submit" id="message_submit" value="Send Message">
+	<input type="submit" name="message" id="message_submit" value="Send Message">
 	<br/><small>to roneesh@gmail.com</small>
 
 <% end %>

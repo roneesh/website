@@ -18,7 +18,15 @@ class PagesController < ApplicationController
   end
 
   def send_message
-
+    @message = Message.new(params["post"])
+    if @message.valid?
+      #TODO mailer action
+      flash[:message] = "Message sent to Roneesh"
+      redirect_to "/contact"
+    else
+      flash[:message] = "Message was not valid, enter data in all fields"
+      render '/contact'
+    end
   end
 
   def twitter  
