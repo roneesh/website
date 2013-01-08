@@ -66,6 +66,23 @@ nav {
 }
 
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 2px solid black;
+}
+
+th, td {
+	border: 1px solid black;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+tr:last-child {
+	border-bottom: 2px solid black;
+}
 
 
 
