@@ -16,6 +16,7 @@ Roneeshwebsite::Application.routes.draw do
 
   get "pages/contact"
   get "/contact", { controller: "Pages", action: "contact" }
+  post "/contact", { controller: "Pages", action: "send_message"}
 
   get "pages/twitter"
   get "/twitter", { controller: "Pages", action: "twitter" }

@@ -2,5 +2,22 @@
 <p> <%= mail_to "roneesh@gmail.com", "roneesh@gmail.com", :cc => "oprah@oprah.com",
          :subject => "Dear Lover," %>
 <p> <%= link_to "@Roneesh", "http://www.twitter.com/roneesh" %> </p>
-<p> Skype: roneesh </p>
-<p> Cell: 469-337-9220 </p>
+<p><a href='skype:roneesh?chat'>Skype: roneesh</a></p>
+<p><a href='tel:+469-337-9220'> Cell: 469-337-9220</a></p>
+<p> Or send a message </p>
+
+<%= form_for @message, :as => :post, :url => "/contact" do |f| %>
+
+	<%= f.label :name %><br/>
+	<%= f.text_field :name %><br/>
+
+	<%= f.label :email %><br/>
+	<%= f.text_field :email %><br/>
+
+	<%= f.label :content, "Your message here." %><br/>
+	<%= f.text_area :content, size: "22x10" %><br/>
+
+	<input type="submit" name="message_submit" id="message_submit" value="Send Message">
+	<br/><small>to roneesh@gmail.com</small>
+
+<% end %>

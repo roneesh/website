@@ -7,7 +7,7 @@ body {
 }
 
 a:link {
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: black;
 }
 
@@ -49,3 +49,24 @@ nav {
 	height: 440px;
 	width: 440px
 }
+
+#message_submit {
+	border: none;
+	text-decoration: underline;
+	font-family: 'Cutive Mono', serif;
+	font-size: 12pt;
+	background-color: white;
+	border-left: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
