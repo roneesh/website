@@ -20,7 +20,7 @@ class PagesController < ApplicationController
   def send_message
     @message = Message.new(params["post"])
     if @message.valid?
-      #TODO mailer action
+      ContactMailer.message_email(@message).deliver
       flash[:message] = "Message sent to Roneesh"
       redirect_to "/contact"
     else

@@ -25,29 +25,45 @@ a:hover {
 	height: 100px;
 	font-size: 72pt;
 	text-align: center;
-	background-color: blue;
-}
-
-#name_area a {
-	text-align: bottom;
-}
-
-#content_carousel {
-	height: 440px;
+	/*background-color: blue;*/
 }
 
 nav {
 	height: 24px;
 }
 
-.cycle-slideshow {
+/*.cycle-slideshow {
+	text-align: center;
 	height: 440px;
-	width: 500px;
+	margin: 0px auto;
 }
 
 .cycle-slideshow img {
+	text-align: center;
 	height: 440px;
-	width: 440px
+	margin: 0px auto;
+}*/
+
+.pics {  
+    height:  400px;  
+    width:   600px;  
+    padding: 0 auto;  
+    margin:  0 auto;  
+} 
+ 
+.pics img {  
+    /*padding: 15px;  */
+    /*border:  1px solid #ccc;  */
+    /*background-color: #eee;  */
+    height: 400px;
+    width:  600px; 
+    top:  0; 
+    left: 0 auto;
+    right: 0 auto; 
+} 
+
+#slideshow {
+	margin: 0px auto;
 }
 
 #message_submit {
@@ -65,11 +81,25 @@ nav {
 	color: red;
 }
 
+#tables {
+}
+
+#large_tables {
+	float: left;
+	display: block;
+}
+
+
+
+#small_tables {
+	float: right;
+}
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0px;
 	border: 2px solid black;
+	margin: 20px;
 }
 
 th, td {
@@ -83,9 +113,5 @@ tr {
 tr:last-child {
 	border-bottom: 2px solid black;
 }
-
-
-
-
 
 
