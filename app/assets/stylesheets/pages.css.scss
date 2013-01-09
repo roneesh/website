@@ -81,18 +81,29 @@ nav {
 	color: red;
 }
 
+
+#about_roneesh {
+	float: left;
+}
+
+#about_roneesh ul {
+	list-style: none;
+	text-indent: none;
+}
+
 #tables {
+	position: relative;
+	clear: both;
 }
 
 #large_tables {
 	float: left;
-	display: block;
+	display: block; 
 }
-
-
 
 #small_tables {
 	float: right;
+	display: block;
 }
 
 table {
@@ -114,4 +125,23 @@ tr:last-child {
 	border-bottom: 2px solid black;
 }
 
+#architecture_portfolio {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.port_row { 
+    padding: 0 auto;  
+    margin:  0 auto;  
+}
+
+.port_row img {
+	border: 2px solid black;
+	height: 80px;
+    width:  80px; 
+    top:  0; 
+    left: 0 auto;
+    right: 0 auto;
+    margin: 5px; 
+}
 
