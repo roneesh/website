@@ -5,8 +5,7 @@ We've met before, haven't we?
 To Do:
 - Make portfolio images links that then show the picture full size in a black box (box has "x" to close and arrows to go to next image)
 - Put all portfolio images in
-- Contact form send e-mail to roneesh@gmail.com
-- Full web shop via shopify or active merchant
+- Back end of web-shop
 - Writing links to blog (or do blog in website?)
 - Comedy and writing table same width as work and education table
 - Some pictures of me on the site

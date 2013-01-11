@@ -1,5 +1,6 @@
 Roneeshwebsite::Application.routes.draw do
 
+  # Pages Controller Routes - Pages Controller is main site controller
   root :to => 'pages#home'
 
   get "pages/home"
@@ -27,6 +28,21 @@ Roneeshwebsite::Application.routes.draw do
   get "pages/blog"
   get "/blog", { controller: "Pages", action: "blog" }
 
+  #Shop controller routes
+
+  get "/shop/tattoo", { controller: "Shop", action: "tattoo"}
+
+  get "/shop/video", { controller: "Shop", action: "video"}
+
+  #Portfolio controller routes
+
+  get "portfolio/physical"
+
+  get "portfolio/design"
+
+  get "portfolio/architecture"
+
+  get "portfolio/architecture_single_page"
 
 
   # The priority is based upon order of creation:

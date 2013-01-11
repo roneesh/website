@@ -22,9 +22,9 @@ Roneeshwebsite::Application.configure do
     domain: "localhost:3000",
     authentication: "plain",
     enable_starttls_atuo: true,
-    user_name: "thepitch.devteam",
-    password: "devteamthepitch"
-  }
+    user_name: ENV["GMAIL_USER"],
+    password: ENV["GMAIL_PASS"]
+ }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log

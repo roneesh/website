@@ -86,9 +86,12 @@ nav {
 	float: left;
 }
 
-#about_roneesh ul {
-	list-style: none;
-	text-indent: none;
+#site_manifesto {
+	float: right;
+}
+
+#site_technologies {
+	list-style: katakana
 }
 
 #tables {
@@ -125,6 +128,8 @@ tr:last-child {
 	border-bottom: 2px solid black;
 }
 
+
+/*PORTFOLIO PAGE*/
 #architecture_portfolio {
 	margin: 0 auto;
 	padding: 0 auto;
@@ -144,4 +149,58 @@ tr:last-child {
     right: 0 auto;
     margin: 5px; 
 }
+
+.port_row img:active {
+	height: 100%;
+	width: 100%;
+}
+
+.port_pics {  
+    height:  800px;  
+    width:   1200px;  
+    padding: 0 auto;  
+    margin:  0 auto;  
+} 
+ 
+.port_pics img {  
+    /*padding: 15px;  */
+    border:  1px solid #ccc;  
+    /*background-color: #eee;  */
+    height: 800px;
+    width:  1200px; 
+    top:  0; 
+    left: 0 auto;
+    right: 0 auto; 
+} 
+
+.shop_shoulder_img {
+	height: 400px;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.shop_forearm_img {
+	height: 400px;
+	margin: 20px;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+#shop_tattoo {
+	width: 500px;
+}
+
+#shop_video {
+	width: 500px;
+}
+
+#shop_images {
+	width: auto;
+}
+
+
+
+
+
+
 

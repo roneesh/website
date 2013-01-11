@@ -2,8 +2,9 @@ class ContactMailer < ActionMailer::Base
   # default from: "from@example.com"
 
   def message_email(message)
-    @name = message.name.delete(' ').downcase
+    @name = message.name
     @email  = message.email
-    mail(:to => "roneesh@gmail.com", :from => @email, :subject => "A Message from #{Message.name}")
+    @content = message.content
+    mail(:to => "roneesh@gmail.com", :from => @email, :subject => "A Message from #{@name}")
   end
 end

@@ -1,0 +1,28 @@
+// Place all the styles related to the Portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#portfolio_navigation_images img {
+	height: 250px;
+	margin: 0 auto;
+	border: 2px solid black;
+
+}
+
+.arch_portfolio {  
+    height:  500px;  
+    width:   700px;  
+    padding: 0 auto;  
+    margin:  0 auto;  
+} 
+ 
+.arch_portfolio img {  
+    /*padding: 15px;  */
+    /*border:  1px solid #ccc;  */
+    /*background-color: #eee;  */
+    height: 500px;
+    width:  700px; 
+    top:  0; 
+    left: 0 auto;
+    right: 0 auto; 
+} 
