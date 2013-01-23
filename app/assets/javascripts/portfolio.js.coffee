@@ -7,3 +7,4 @@ $('.arch_portfolio').cycle({
 	next: 'next'
 	prev: 'prev'
 })
+

@@ -4,11 +4,17 @@
 
 <p> Click for more. </p>
 
-<%= link_to image_tag("physical/physical_gate_2.jpg", class: "physical_port_link_img"), "/portfolio/physical" %>
+<span style="inline" id="physical_link_img">
+<%= link_to image_tag("physical/physical_gate_2.jpg", class: "port_link_img"), "/portfolio/physical" %>
+</span>
 
-<%= link_to image_tag("design/pitchpage", class: "design_port_link_img"), "/portfolio/design" %>
+<span id="design_link_img">
+<%= link_to image_tag("design/pitchpage", class: "port_link_img"), "/portfolio/design" %>
+</span>
 
-<%= link_to image_tag("home_pictures.jpg", class: "arch_port_link_img"), "/portfolio/architecture" %>
+<span id="arch_link_img">
+<%= link_to image_tag("home_pictures.jpg", class: "port_link_img"), "/portfolio/architecture" %>
+</span>
 
 </div>
 
@@ -16,5 +22,8 @@
 
 </div>
 
+<script>
+
+</script>
 
 
