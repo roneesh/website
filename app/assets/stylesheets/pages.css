@@ -81,28 +81,24 @@ nav {
 	color: red;
 }
 
-
-#about_roneesh {
+#about {
+	width: 200px;
 	float: left;
-}
-
-#about section, aside {
-	float: left;
-}
-
-
-#site_manifesto {
-	float: right;
-}
+	}
 
 #site_technologies {
 	list-style: katakana
 }
 
+#tables {
+	margin-left: 40px;
+	float: left;
+}
 
 #large_tables {
 	float: left;
 	display: block;
+	width: 640px;
 }
 
 #small_tables {
