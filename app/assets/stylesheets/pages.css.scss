@@ -81,34 +81,40 @@ nav {
 	color: red;
 }
 
-
-#about_roneesh {
+#about {
+	width: 200px;
 	float: left;
-}
-
-#site_manifesto {
-	float: right;
-}
+	}
 
 #site_technologies {
 	list-style: katakana
 }
 
 #tables {
-	position: relative;
-	clear: both;
+	margin-left: 40px;
+	float: left;
 }
 
 #large_tables {
 	float: left;
-	display: block; 
+	display: block;
+	width: 600px;
 }
 
 #small_tables {
-	float: right;
+	float: left;
 	display: block;
+	margin-left: 20px;
 }
 
+#small_tables table {
+	min-width: 100%;
+}
+
+#WorkandEducation,
+#ComedyandWriting {
+	min-width: 100%; 	
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0px;
