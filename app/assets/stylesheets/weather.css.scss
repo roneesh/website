@@ -53,6 +53,7 @@ list-style-type: disc;
 .daily_weather_forecast img {
 	filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+    max-width: 100%;
 }
 
 .daily_weather_forecast span {
@@ -64,18 +65,26 @@ list-style-type: disc;
     margin: 0.0em 0;
 }
 
-
 .weather_tagline {
 	margin: 0;
 	font-family: 'Volkhov', serif;
+	margin-bottom: 10px;
 }
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 960px) {
 	.daily_weather_forecast {
-		float: none;
-		width: 172px;
+		float: left;
+		margin: 1.041666667%; /*10px*/
+		min-width: 45.83333333%; /*440px*/
 		height: 120px;
-		margin: 10px auto;
 	}
+}
 
+@media all and (max-width: 560px) {
+	.daily_weather_forecast {
+	margin: 1.785714286%; /*10px*/
+	min-width: 96.42857143%; /*540px*/
+	height: 120px;
+	float: left;
+	}
 }

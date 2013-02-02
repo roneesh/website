@@ -1,7 +1,7 @@
 <div class="weather_container group">
 
-  <h1 class="weather_header">The Weather in <%= @country %></h1>
-  <p class="weather_tagline"><i>a 10-day forecast Brought to you by Geocoder and WeatherUnderground API</i></p>
+  <h1 class="weather_header">The Weather in Chicago</h1>
+  <p class="weather_tagline"><i>a 10-day forecast Brought to you by the WeatherUnderground API</i></p>
   
   <ul class="forecast">
 	<% @forecast.each do |day| %>
@@ -11,5 +11,3 @@
 		</li>
 	<% end %>
   </ul>
-
-</div>
