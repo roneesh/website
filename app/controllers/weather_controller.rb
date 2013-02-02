@@ -4,13 +4,13 @@ require 'json'
 class WeatherController < ApplicationController
   
   def weather
-  	@result = request.location.coordinates
-  	city = request.location.city
-  	@country = request.location.country
-  	longitude = request.location.longitude
-  	latitude = request.location.latitude
+  	# @result = request.location.coordinates
+  	# city = request.location.city
+  	# @country = request.location.country
+  	# longitude = request.location.longitude
+  	# latitude = request.location.latitude
 
-	json_result = open("http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/CA/#{city}.json").read	
+	json_result = open("http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/CA/Chicago.json").read	
 	@parsed_result = JSON.parse(json_result)
 	@forecast = []
 
