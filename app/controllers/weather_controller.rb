@@ -10,7 +10,16 @@ class WeatherController < ApplicationController
   	# @longitude = request.location.longitude
   	# @latitude = request.location.latitude
 
-	json_result = open("http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/CA/Chicago.json").read	
+  	if params[:city]
+  		@city = params[:city]
+  		city_for_string = params[:city]
+  	else
+  		@city = "Chicago"
+  		city_for_string = "Chicago"
+  	end
+
+  	url_string = "http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/CA/#{city_for_string}.json"
+	json_result = open(url_string).read	
 	@parsed_result = JSON.parse(json_result)
 	@forecast = []
 
@@ -23,7 +32,7 @@ class WeatherController < ApplicationController
 		@forecast << day
 		day = []
 	end
-
+  
   end
 
 end
