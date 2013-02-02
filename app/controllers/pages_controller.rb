@@ -39,4 +39,7 @@ class PagesController < ApplicationController
   def blog
   end
 
+  def solar_system
+  end
+
 end

@@ -1,0 +1,199 @@
+<html>
+
+<head>
+<style type="text/css">
+
+	nav {
+		height: 16px;
+		top: 48px;
+		left: 0;
+  		position: fixed;
+  		right: 0; 
+  		z-index: 1;
+	}
+	.solar_system {
+		width: 1222517.5px;
+		height: 600px;
+		border: 5px solid black;
+		border-left: none;
+		border-right: none;
+		position: relative;
+		margin-top: 100px;
+
+	}
+
+	.celestial {
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+		text-align: center;
+		border: 1px dotted black;
+		position: absolute;
+	}
+
+	.sun {
+		height: 556px;
+		width: 556px;
+		top: 22px;
+		left: -278px;
+		background: yellow;
+	}
+
+	.mercury {
+		background: brown;
+		height: 2px;
+		width: 2px;
+		top: 299px;
+		left: 14592.72px;
+	}
+
+	.venus {
+		background: red;
+		height: 4.84px;
+		width: 4.84px;
+		top: 297.58px;
+		left: 26940.42px;	
+	}
+
+	.earth {
+		background: blue;
+		height: 5px;
+		width: 5px;
+		top: 297.5px;
+		left: 37417.25px;
+	}
+
+	.mars {
+		background: red;
+		height: 2.72px;
+		width: 2.72px;
+		top: 298.64px;
+		left: 56874.22px;
+	}
+
+	.jupiter {
+		background: beige;
+		height: 57.2px;
+		width: 57.2px;
+		top: 271.4;
+		left: 194569.7px;
+	}
+
+	.saturn {
+		background: pink;
+		height: 48.2px;
+		width: 48.2px;
+		top: 275.9px;
+		left: 356212.22px;
+	}
+
+	.uranus {
+		background: blue;
+		height: 20.44px;
+		width: 20.44px;
+		top: 289.78px;
+		left: 718411.2px;
+	}
+
+	.neptune {
+		background: blue;
+		height: 19.8px;
+		width: 19.8px;
+		top: 290.1px;
+		left: 1122517.5px;
+	}
+
+	ul {
+		list-style: none;
+		float: left;
+	}
+
+	li {
+		float: left;
+	}
+
+	.anchor {
+		border: none;
+		height: 1px;
+		width: 600px;
+		top: 100px;
+		position: absolute;
+	}
+
+	.noscale {
+		
+	}
+
+/*	.anchor:before {
+		display: block;
+		content: "";
+		margin-left:  600px;
+		margin-right: 600px;
+		visibility: hidden;
+	}*/
+
+	#sun { 		left: 0px;}
+	#mercury { 	left: 14292.72px;}
+	#venus { 	left: 26640.42px;}
+	#earth { 	left: 37117.25px;}
+	#mars { 	left: 56574.22px;}
+	#jupiter { 	left: 194269.7px;}
+	#saturn { 	left: 355912.22px;}
+	#uranus { 	left: 718111.2px;}
+	#neptune { 	left: 1122217.5px;}
+
+
+
+</style>
+</head>
+
+<body>
+
+<nav>
+	<ul>
+		<li><a href="noscale"> No Scale | </a><li>
+		<li><a href="#sun">Sun |</a></li>
+		<li><a href="#mercury">Mercury |</a></li>
+		<li><a href="#venus">Venus |</a></li>
+		<li><a href="#earth">Earth |</a></li>
+		<li><a href="#mars">Mars |</a></li>
+		<li><a href="#jupiter">Jupiter |</a></li>
+		<li><a href="#saturn">Saturn |</a></li>
+		<li><a href="#uranus">Uranus |</a></li>
+		<li><a href="#neptune">Neptune</a></li>
+	</ul>
+</nav>
+
+<div class="solar_system">
+
+	<div class="anchor" id="sun"></div>
+	<div class="celestial sun"></div>
+	
+	<div class="anchor" id="mercury"></div>
+	<div class="celestial mercury"></div>
+
+	<div class="anchor" id="venus"></div>
+	<div class="celestial venus"></div>
+	
+	<div class="anchor" id="earth"></div>
+	<div class="celestial earth"></div>
+	
+	<div class="anchor" id="mars"></div>
+	<div class="celestial mars"></div>
+	
+	<div class="anchor" id="jupiter"></div>
+	<div class="celestial jupiter"></div>
+	
+	<div class="anchor" id="saturn"></div>
+	<div class="celestial saturn"></div>
+	
+	<div class="anchor" id="uranus"></div>
+	<div class="celestial uranus"></div>
+	
+	<div class="anchor" id="neptune"></div>
+	<div class="celestial neptune"></div>	
+
+</div>
+</body>
+
+</html>

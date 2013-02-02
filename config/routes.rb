@@ -28,6 +28,8 @@ Roneeshwebsite::Application.routes.draw do
   get "pages/blog"
   get "/blog", { controller: "Pages", action: "blog" }
 
+  get "/solar_system", {controller: "Pages", action: "solar_system"}
+
   #Shop controller routes
 
   get "/shop/tattoo", { controller: "Shop", action: "tattoo"}
@@ -43,6 +45,10 @@ Roneeshwebsite::Application.routes.draw do
   get "portfolio/architecture"
 
   get "portfolio/architecture_single_page"
+
+  #Weather controller routes
+
+  get "/weather", {controller: "Weather", action: "weather"}
 
 
   # The priority is based upon order of creation:

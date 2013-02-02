@@ -1,0 +1,15 @@
+<div class="weather_container group">
+
+  <h1 class="weather_header">The Weather in <%= @country %></h1>
+  <p class="weather_tagline"><i>a 10-day forecast Brought to you by Geocoder and WeatherUnderground API</i></p>
+  
+  <ul class="forecast">
+	<% @forecast.each do |day| %>
+		<li class="daily_weather_forecast">
+			<p> <%= day[0] %><br/> <%= day[1] %> / <span> <%= day[2] %></span> </p>
+			<img src="<%=day[3]%>"></img>
+		</li>
+	<% end %>
+  </ul>
+
+</div>
