@@ -12,13 +12,19 @@ class WeatherController < ApplicationController
 
   	if params[:city]
   		@city = params[:city]
-  		city_for_string = params[:city]
   	else
   		@city = "Chicago"
-  		city_for_string = "Chicago"
   	end
 
-  	url_string = "http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/CA/#{city_for_string}.json"
+    if params[:state]
+      @state = params[:state]
+    else
+      @state = "IL"
+    end
+
+    city_url = @city.strip.gsub(/\s+/,'_')
+
+  	url_string = "http://api.wunderground.com/api/#{ENV["WEATHER_KEY"]}/forecast10day/q/#{@state}/#{city_url}.json"
 	json_result = open(url_string).read	
 	@parsed_result = JSON.parse(json_result)
 	@forecast = []
@@ -29,6 +35,7 @@ class WeatherController < ApplicationController
 		day << day_forecast["high"]["fahrenheit"]
 		day << day_forecast["low"]["fahrenheit"]
 		day << day_forecast["icon_url"]
+    day << day_forecast["conditions"]
 		@forecast << day
 		day = []
 	end
