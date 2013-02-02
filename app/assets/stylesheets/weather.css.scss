@@ -10,6 +10,7 @@ list-style-type: disc;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 0px;
+-moz-padding-start: 0px;
 }
 
 .weather_container {
@@ -18,6 +19,7 @@ list-style-type: disc;
 	margin: 0 auto;
 	text-align: center;
 	font-family: 'Oxygen', sans-serif;
+	-moz-font-family: 'Oxygen', sans-serif;
 }
 
 .group:before, .group:after {
