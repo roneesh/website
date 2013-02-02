@@ -1,6 +1,6 @@
 <div class="weather_container group">
 
-  <h1 class="weather_header"><%=@forecast[0][4]%> in <%= @city %>, <%= @state %></h1>
+  <h1 class="weather_header"><%=@forecast[0][4]%> in <%= @city %></h1>
 
   <form class="weather_selector_form" action="/weather" method="get">
   	Get the forecast for: <input type="text" name="city" placeholder="City">
