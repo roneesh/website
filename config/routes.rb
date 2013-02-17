@@ -30,6 +30,10 @@ Roneeshwebsite::Application.routes.draw do
 
   get "/solar_system", {controller: "Pages", action: "solar_system"}
 
+  get "/login", {controller: "Pages", action: "login"}
+
+  get "/facebook_friends", {controller: "Pages", action: "facebook_oauth"}
+
   #Shop controller routes
 
   get "/shop/tattoo", { controller: "Shop", action: "tattoo"}

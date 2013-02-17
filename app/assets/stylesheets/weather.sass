@@ -1,0 +1,88 @@
+$margin: 10px
+$weather_border: 5px solid black
+
+=grayscale-filter($filter_color: gray)
+  filter: $filter_color //IE6-9
+  -webkit-filter: grayscale(1) //Chrome & Safari 6+
+
+ul, menu, dir
+  display: block
+  list-style-type: disc
+  -webkit-margin-before: 1em
+  -webkit-margin-after: 1em
+  -webkit-margin-start: 0px
+  -webkit-margin-end: 0px
+  -webkit-padding-start: 0px
+  -moz-padding-start: 0px
+
+.site_navigation_links 
+  text-align: center
+
+.weather_container
+  max-width: 960px
+  margin: 0 auto
+  text-align: center
+  font-family: 'Oxygen', sans-serif
+  -moz-font-family: 'Oxygen', sans-serif
+
+.group:before, .group:after
+  display: table
+  content: ""
+
+.group:after
+  clear:both  
+
+.forecast 
+  list-style: none
+  margin: 0 auto
+
+.daily_weather_forecast 
+  margin: 1.041666667% /*10px*/
+  min-width: 16.875% /*162px*/
+  height: 120px
+  float: left
+  border: $weather_border
+  border-radius: 15px
+  &:hover img 
+    filter: white /* IE6-9 */
+    -webkit-filter: grayscale(0) /* Google Chrome & Safari 6+ */
+  @media all and (max-width: 960px)
+    float: left
+    margin: 1.041666667% /*10px*/
+    min-width: 45.83333333% /*440px*/
+    height: 120px
+  @media all and (max-width: 560px) 
+    margin: 1.785714286% //10px
+    min-width: 96.42857143% //540px
+    height: 120px
+    float: left
+
+.daily_weather_forecast p 
+  margin: 7px auto
+  padding: 0
+
+.daily_weather_forecast img 
+  +grayscale-filter
+  max-width: 100%
+
+.daily_weather_forecast span 
+  opacity: 0.25
+
+.weather_header 
+  font-size: 72px
+  margin: 0.0em 0
+
+.weather_selector_form 
+
+.weather_tagline 
+  margin: 0
+  font-family: 'Volkhov', serif
+  margin-bottom: $margin
+
+
+
+
+
+
+
+
