@@ -1,29 +1,27 @@
 <h1>Pages#portfolio</h1>
 
+
+
+<p> Click to feel things. </p>
+
+<ul class="portfolio_nav_list clear">
+  <li><a href="#physical_link_img"> Physical Things </a></li>
+  <li><a href="#design_link_img"> Designed Things </a></li>
+  <li><a href="#arch_link_img"> Architectural Things </a></li>
+</ul>
+
 <div id="portfolio_navigation_images">
 
-<p> Click for more. </p>
-
-<span style="inline" id="physical_link_img">
-<%= link_to image_tag("physical/physical_gate_2.jpg", class: "port_link_img"), "/portfolio/physical" %>
-</span>
-
-<span id="design_link_img">
-<%= link_to image_tag("design/pitchpage", class: "port_link_img"), "/portfolio/design" %>
-</span>
-
-<span id="arch_link_img">
-<%= link_to image_tag("home_pictures.jpg", class: "port_link_img"), "/portfolio/architecture" %>
-</span>
+  <div id="physical_link_img" class="tab">
+  <%= link_to image_tag("physical/physical_gate_2.jpg", class: "port_link_img"), "/portfolio/physical" %>
+  </div>
+  
+  <div id="design_link_img" class="tab">
+  <%= link_to image_tag("design/pitchpage", class: "port_link_img"), "/portfolio/design" %>
+  </div>
+  
+  <div id="arch_link_img" class="tab">
+  <%= link_to image_tag("home_pictures.jpg", class: "port_link_img"), "/portfolio/architecture" %>
+  </div>
 
 </div>
-
-
-
-</div>
-
-<script>
-
-</script>
-
-

@@ -3,8 +3,18 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
-  $('#design_link_img').mouseover ->
+  $('.tab img').mouseover ->
   	$(this).fadeTo('fast', 0.25)
-  	$(this).append.text('<p>Design</p>')
-  $('#design_link_img').mouseleave ->    
+  $('.tab img').mouseleave ->    
     $(this).fadeTo('slow', 1.0)
+
+  $('.tab').hide()
+  $('#portfolio_navigation_images div:first').show()
+  $('.portfolio_nav_list li:first').addClass('tab-active')
+
+  $('.portfolio_nav_list a').on('click', ->
+    $('.portfolio_nav_list li').removeClass('tab-active')
+    $(this).parent().addClass('tab-active')
+    $('#portfolio_navigation_images div').hide()
+    $($(this).attr('href')).show()
+    )

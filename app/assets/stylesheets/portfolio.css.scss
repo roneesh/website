@@ -6,6 +6,7 @@
 	height: 250px;
 	margin: 0 auto;
 	border: 2px solid black;
+    margin-left: 5px;
 
 }
 
@@ -43,7 +44,7 @@
     height: 500px;
     padding: 0 auto;
     margin: 0 auto;
-    /*width: auto;
+    /*width: au:to;
     top:  0; 
     left: 0 auto;
     right: 0 auto;*/ 
@@ -68,3 +69,22 @@
     left: 0 auto;
     right: 0 auto; */
 } 
+
+.portfolio_nav_list {
+    margin-left: 10px;
+}
+
+.portfolio_nav_list li {
+    width: 250px;
+    float: left;
+    list-style: none;
+}
+
+.tab-active {
+
+}
+
+.tab-active a {
+    border: 1px solid black;
+    text-decoration: none;
+}
