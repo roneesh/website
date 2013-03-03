@@ -18,3 +18,6 @@ jQuery ->
     $('#portfolio_navigation_images div').hide()
     $($(this).attr('href')).show()
     )
+
+  $('.transform_box').mouseover ->
+    $(this).addClass('transform')

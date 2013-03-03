@@ -607,13 +607,85 @@ tr:last-child {
   content: "";
   display: table;
 }
+
 .clear:after {
   clear: both;
 }
+
 .clear {
   *zoom: 1;
 }
 
 
+// 2D CUBE ON TRANSFORMS PAGE
 
+.cube-container {
+    height: 300px;
+    width: 400px
+}
 
+.cube {
+  height: 230px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.side {
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+}
+
+.top {
+  background: #9acc53;
+  -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+}
+
+.left {
+  background: #8ec63f;
+  -webkit-transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+.right {
+  background: #80b239;
+  -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+// 3D CUB on TRANSFORMS PAGE
+
+.threeD_cube_holder {
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background: red;
+}
+
+.cube img {
+  max-width: 100%;
+}
+
+.lesson_title {
+  text-align: center;
+}
+
+.lesson {
+  height: 350px;
+  max-width: 100%;
+  border: 5px solid black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.content_box {
+  margin: 0 auto;
+  height: 300px;
+  max-width: 300px;
+  border: 5px solid rgba(255,0,0, 1.0);
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: grey;
+  text-align: center;
+}

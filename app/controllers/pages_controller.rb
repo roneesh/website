@@ -46,6 +46,12 @@ class PagesController < ApplicationController
   def login
   end
 
+  def transforms
+  end
+
+  def lesson
+  end
+
   def facebook_oauth
       
       if params[:code]
