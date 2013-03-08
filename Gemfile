@@ -31,6 +31,8 @@ gem 'jquery-rails'
 #Added gems by Roneesh
 gem 'twitter'
 gem 'geocoder'
+gem 'aws-s3'
+gem 'font-awesome-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

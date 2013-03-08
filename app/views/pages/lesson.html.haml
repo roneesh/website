@@ -1,9 +1,28 @@
-%h1.lesson_title ... And I Guess I Learned A Lesson.
+%h1.lesson_title ... Is This What It Feels Like
 
-.lesson
-  .content_box
-    %p
-      Poetic Justice <br/>
-      by <br/>
-      Roneesh Vashisht <br/>
-    %audio(src="assets/audio/Poetic_Justice_ver2.mp3" controls)
+%ul
+  -@lessons.each do |lesson|
+    .lesson
+      .cube-container
+        .cube
+          / %figure.side.front
+          / %figure.side.back
+          %figure.side.left
+            .play-icon
+              = link_to lesson.url, {class: "html5"} do
+                %span.icon-play
+            .track
+          %figure.side.right
+            %p.script
+              = lesson.script
+          %figure.side.top
+            %p.title-block
+              Name of Track Here
+              %br
+              by
+              %br
+              The Author
+              %br
+          / %figure.side.bottom
+
+

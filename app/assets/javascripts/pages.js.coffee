@@ -21,3 +21,16 @@ jQuery ->
 
   $('.transform_box').mouseover ->
     $(this).addClass('transform')
+
+
+  audioSection = $('.track')  
+  $('a.html5').click ->  
+    $('.play-icon').hide()
+    audio = $("<audio>", {controls: 'controls'})  
+    url = $(this).attr('href')
+    $('<source>').attr('src', url).appendTo(audio)
+    audioSection.html(audio)
+    return false  
+ 
+  $('.content_box').on('click', ->
+    $('.content_box').addClass('backwards'))

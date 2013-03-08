@@ -50,6 +50,8 @@ class PagesController < ApplicationController
   end
 
   def lesson
+    # @tracks = AWS::S3::Bucket.find(BUCKET).objects
+    @lessons = Lesson.all
   end
 
   def facebook_oauth

@@ -296,15 +296,15 @@ input {
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
+ * Address inconsistent `text--webkit-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text--webkit-transform` values.
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
 button,
 select {
-    text-transform: none;
+    text--webkit-transform: none;
 }
 
 /**
@@ -617,7 +617,7 @@ tr:last-child {
 }
 
 
-// 2D CUBE ON TRANSFORMS PAGE
+// 2D CUBE ON -webkit-TRANSFORMS PAGE
 
 .cube-container {
     height: 300px;
@@ -653,7 +653,7 @@ tr:last-child {
   -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
 }
 
-// 3D CUB on TRANSFORMS PAGE
+// 3D CUB on -webkit-TRANSFORMS PAGE
 
 .threeD_cube_holder {
   height: 400px;
@@ -673,14 +673,13 @@ tr:last-child {
 .lesson {
   height: 350px;
   max-width: 100%;
-  border: 5px solid black;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
 .content_box {
   margin: 0 auto;
-  height: 300px;
+  height: 350px;
   max-width: 300px;
   border: 5px solid rgba(255,0,0, 1.0);
   border-radius: 30px;
@@ -688,4 +687,78 @@ tr:last-child {
   margin-bottom: 20px;
   background: grey;
   text-align: center;
+}
+
+
+// ... AND I GUESS I LEARNED A LESSON
+
+
+.cube-container {
+  height: 200px;
+  perspective: 300;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+.cube {  
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-100px);
+  transform-style: preserve-3d;
+  width: 100%;
+}
+.side {
+  background: rgba(142, 198, 63, 0.3);
+  border: 2px solid #8ec63f;
+  height: 196px;
+  position: absolute;
+  width: 196px;
+}
+.front {
+  transform: translateZ(100px);
+}
+.back {
+  transform: rotateX(180deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+  overflow: hidden;
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.play-icon {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.play-icon a {
+  text-decoration: none
+}
+
+.play-icon span {
+  padding-top: 10%;
+  font-size: 108pt;
+  text-align: center;
+}
+
+.track audio {
+  width: 90%;
+  padding-top: 40%;
+}
+
+.title-block {
+  padding-top: 20%;
+}
+
+.script {
+  overflow: hidden;
 }
