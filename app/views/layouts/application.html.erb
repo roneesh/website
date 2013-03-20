@@ -15,24 +15,23 @@
 
 <body>
 <nav class="site_navigation_links">
-	<a href="/about">About</a> |
+<p class="nav_paragraph"> Site:
+  <a href="/about">About</a> |
 	<a href="/contact">Contact</a> |
-
-  <% if session[:code] %>
-    <a href="/facebook_friends"> Facebook Friends</a> |
-	  <a href="/home">Home</a> |
-  <% else %>
-    <a href="/home">Home</a> |
-<!--     <a href="/login">Login</a> | 
- -->  <% end %>
+	<a href="/home">Home</a>
+</p>
+<p class="nav_paragraph"> Work:
 	<a href="/portfolio">Portfolio</a> |
 	<a href="/shop">Shop</a> |
 	<a href="https://github.com/roneesh/website">Source</a> |
-  <a href="/transforms">Transforms</a> |
   <a href="/twitter">Twitter</a> |
-	<a href="/weather">Weather</a> | 
+	<a href="/weather">Weather</a> 
+</p>
+<p class="nav_paragraph"> Blogs:
 	<a href="http://roneesh.tumblr.com">Writing</a> |
-  <a href="http://youarebeingobserved.tumblr.com">You Are Being Observed </a>
+  <a href="http://youarebeingobserved.tumblr.com">You Are Being Observed </a> |
+  <a href="/lessons">Youth's Awful Lessons</a>
+</p>
 </nav>
 
 <p id="flash_message"><%= flash[:message] %></p>

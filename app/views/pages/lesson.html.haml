@@ -1,4 +1,4 @@
-%h1.lesson_title ... Is This What It Feels Like
+%h1.hash_title#youth_title Youth's Awful Lessons
 
 %ul
   -@lessons.each do |lesson|
@@ -8,20 +8,20 @@
           / %figure.side.front
           / %figure.side.back
           %figure.side.left
+            %p.script
+              = lesson.script
+          %figure.side.right
             .play-icon
               = link_to lesson.url, {class: "html5"} do
                 %span.icon-play
             .track
-          %figure.side.right
-            %p.script
-              = lesson.script
           %figure.side.top
             %p.title-block
-              Name of Track Here
+              = lesson.title
               %br
               by
               %br
-              The Author
+              = lesson.author
               %br
           / %figure.side.bottom
 

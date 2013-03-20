@@ -26,7 +26,7 @@ jQuery ->
   audioSection = $('.track')  
   $('a.html5').click ->  
     $('.play-icon').hide()
-    audio = $("<audio>", {controls: 'controls'})  
+    audio = $("<audio>", {controls: 'controls', autoplay: 'autoplay'})  
     url = $(this).attr('href')
     $('<source>').attr('src', url).appendTo(audio)
     audioSection.html(audio)

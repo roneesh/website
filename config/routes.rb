@@ -28,9 +28,6 @@ Roneeshwebsite::Application.routes.draw do
   get "pages/blog"
   get "/blog", { controller: "Pages", action: "blog" }
 
-  get "pages/transforms"
-  get "/transforms", { controller: "Pages", action: "transforms"}
-
   get "/lessons", {controller: "Pages", action: "lesson"}
 
   get "/solar_system", {controller: "Pages", action: "solar_system"}

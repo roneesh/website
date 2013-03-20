@@ -46,9 +46,6 @@ class PagesController < ApplicationController
   def login
   end
 
-  def transforms
-  end
-
   def lesson
     # @tracks = AWS::S3::Bucket.find(BUCKET).objects
     @lessons = Lesson.all
