@@ -34,8 +34,6 @@ Roneeshwebsite::Application.routes.draw do
 
   get "/login", {controller: "Pages", action: "login"}
 
-  get "/facebook_friends", {controller: "Pages", action: "facebook_oauth"}
-
   #Shop controller routes
 
   get "/shop/tattoo", { controller: "Shop", action: "tattoo"}
