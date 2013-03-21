@@ -23,14 +23,22 @@ jQuery ->
     $(this).addClass('transform')
 
 
-  audioSection = $('.track')  
-  $('a.html5').click ->  
-    $('.play-icon').hide()
-    audio = $("<audio>", {controls: 'controls', autoplay: 'autoplay'})  
-    url = $(this).attr('href')
-    $('<source>').attr('src', url).appendTo(audio)
-    audioSection.html(audio)
-    return false  
- 
+    
+  # $('a.html5').click ->  
+  #   audioSection = $('.track')
+  #   $(this).hide()
+  #   audio = $("<audio>", {controls: 'controls', autoplay: 'autoplay'})  
+  #   url = $(this).attr('href')
+  #   $('<source>').attr('src', url).appendTo(audio)
+  #   audioSection.html(audio)
+  #   return false
+  item = ""
+  $(".track-panel").on "click", ".icon-play", ->
+    $(this).hide()
+    track = $(this).parent('.play-icon').parent('.track-panel')
+    audio_object = track.children('.play-icon').children('audio').attr("controls", "controls")
+    audio_object.get(0).play()
+
+
   $('.content_box').on('click', ->
     $('.content_box').addClass('backwards'))

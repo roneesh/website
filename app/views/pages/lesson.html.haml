@@ -2,7 +2,7 @@
 
 %ul
   -@lessons.each do |lesson|
-    .lesson
+    %li.lesson
       .cube-container
         .cube
           / %figure.side.front
@@ -10,11 +10,11 @@
           %figure.side.left
             %p.script
               = lesson.script
-          %figure.side.right
+          %figure.side.right.track-panel
             .play-icon
-              = link_to lesson.url, {class: "html5"} do
-                %span.icon-play
-            .track
+              %span.icon-play
+              %audio
+                %source{src: "#{lesson.url}", type:"audio/mpeg"}
           %figure.side.top
             %p.title-block
               = lesson.title
@@ -28,5 +28,9 @@
               %br 
               Brad Brubaker
           / %figure.side.bottom
+    %br
+    %br
+    %br
+
 
 

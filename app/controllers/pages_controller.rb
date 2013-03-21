@@ -48,7 +48,7 @@ class PagesController < ApplicationController
 
   def lesson
     # @tracks = AWS::S3::Bucket.find(BUCKET).objects
-    @lessons = Lesson.all
+    @lessons = Lesson.all(order: 'updated_at DESC')
   end
 
 end
