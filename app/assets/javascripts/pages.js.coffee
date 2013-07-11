@@ -42,3 +42,8 @@ jQuery ->
 
   $('.content_box').on('click', ->
     $('.content_box').addClass('backwards'))
+
+  $('#name_area').on('click', ->
+    $('.pics').replaceWith("<div id='gif-area'><img src='/assets/shining.gif'></img></div>"))
+
+

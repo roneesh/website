@@ -620,8 +620,8 @@ tr:last-child {
 // 2D CUBE ON -webkit-TRANSFORMS PAGE
 
 .cube-container {
-    height: 300px;
-    width: 400px
+  height: 300px;
+  width: 400px
 }
 
 .cube {
@@ -641,16 +641,22 @@ tr:last-child {
 .top {
   background: #9acc53;
   -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+  -moz-transform: rotate(-45deg) skew(15deg, 15deg);
+  transform: rotate(-45deg) skew(15deg, 15deg);
 }
 
 .left {
   background: #8ec63f;
   -webkit-transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+  -moz-transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+  transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
 }
 
 .right {
   background: #80b239;
   -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+  -moz-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+  transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
 }
 
 // 3D CUB on -webkit-TRANSFORMS PAGE
@@ -703,8 +709,13 @@ tr:last-child {
 .cube {  
   height: 100%;
   position: absolute;
+  -webkit-transform: translateZ(-100px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform: translateZ(-100px);
+  -moz-transform-style: preserve-3d;
   transform: translateZ(-100px);
   transform-style: preserve-3d;
+
   width: 100%;
 }
 .side {
@@ -716,22 +727,35 @@ tr:last-child {
 }
 
 .front {
+  
+  -moz-transform: translateZ(100px);
+  -webkit-transform: translateZ(100px);
   transform: translateZ(100px);
 }
 .back {
+  -webkit-transform: rotateX(180deg) translateZ(100px);
+  -moz-transform: rotateX(180deg) translateZ(100px);
   transform: rotateX(180deg) translateZ(100px);
 }
 .left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
   transform: rotateY(-90deg) translateZ(100px);
   overflow: auto;
 }
 .right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
   transform: rotateY(90deg) translateZ(100px);
 }
 .top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
   transform: rotateX(90deg) translateZ(100px);
 }
 .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
   transform: rotateX(-90deg) translateZ(100px);
 }
 
@@ -779,3 +803,22 @@ tr:last-child {
 .weather_header {
   margin-top: 100px;
 }
+
+// On HOME PAGE
+
+#gif-area {
+  text-align: center;
+  z-index: -1;
+}
+
+#gif-area img {
+  width: 100%;
+}
+
+// #name_area p:hover {
+//   color: blue;
+// }
+
+
+
+
