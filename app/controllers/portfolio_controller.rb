@@ -11,4 +11,8 @@ class PortfolioController < ApplicationController
   def architecture_single_page
   end
 
+  def portfolio2014
+    render layout: "portfolio_2014"
+  end
+
 end

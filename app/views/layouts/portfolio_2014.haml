@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+%html
+%head
+  %title Roneesh Vashisht 2014
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+  %link(href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css')
+  %link(href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css')
+  %link(href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic' rel='stylesheet' type='text/css')  
+  %link(href='styling.css' rel='stylesheet' type='text/css')
+  %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+  %script(src="http://malsup.github.com/jquery.cycle2.js")
+
+
+%body
+  %nav
+    .nav-col
+      %a(href="/about")Roneesh Vashisht
+    .nav-col
+      %a(href="/portfolio")Development Work
+    .nav-col
+      %a(href="/weather")The Weather
+    .nav-col
+      %a(href="/contact")Contact
+
+
+  = yield

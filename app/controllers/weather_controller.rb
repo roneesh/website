@@ -3,6 +3,8 @@ require 'json'
 
 class WeatherController < ApplicationController
   
+  layout "portfolio_2014"
+
   def weather
   	# @result = request.location.coordinates
   	# @city = request.location.city
@@ -38,6 +40,8 @@ class WeatherController < ApplicationController
       day << day_forecast["conditions"]
   		@forecast << day
   		day = []
+
+
   	end
   
   end

@@ -1,4 +1,4 @@
-<h1 class="hash_title">Pages#contact</h1>
+<div class="body-nav-col body-nav-col-px">
 <p> <%= mail_to "roneesh@gmail.com", "roneesh@gmail.com", :cc => "oprah@oprah.com",
          :subject => "Dear Lover," %>
 <p> <%= link_to "@Roneesh", "http://www.twitter.com/roneesh" %> </p>
@@ -6,18 +6,19 @@
 <p><a href='tel:+469-337-9220'> Cell: 469-337-9220</a></p>
 <p> Or send a message </p>
 
-<%= form_for @message, :as => :post, :url => "/contact" do |f| %>
+<%= form_for @message, :as => :post, :url => "/contact", :html => {:class => "new_contact_form"} do |f| %>
 
 	<%= f.label :name %><br/>
-	<%= f.text_field :name, :required => true %><br/>
+	<%= f.text_field :name, :required => true %><br/><br/>
 
 	<%= f.label :email %><br/>
-	<%= f.text_field :email, :required => true %><br/>
+	<%= f.text_field :email, :required => true %><br/><br/>
 
 	<%= f.label :content, "Your message here." %><br/>
-	<%= f.text_area :content, size: "22x10", :required => true %><br/>
+	<%= f.text_area :content, size: "22x10", :required => true %><br/><br/>
 
 	<input type="submit" name="message" id="message_submit" value="Send Message">
 	<br/><small>to roneesh@gmail.com</small>
 
 <% end %>
+</div>

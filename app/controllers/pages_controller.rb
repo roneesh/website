@@ -12,9 +12,11 @@ class PagesController < ApplicationController
   end
 
   def about
+    render layout: "portfolio_2014"
   end
 
   def contact
+    render layout: "portfolio_2014"
     @message = Message.new
   end
 

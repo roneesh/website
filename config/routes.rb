@@ -1,7 +1,14 @@
 Roneeshwebsite::Application.routes.draw do
 
   # Pages Controller Routes - Pages Controller is main site controller
-  root :to => 'pages#home'
+  root :to => 'pages#portfolio'
+
+  # 2014 web portfolio
+
+  get '/portfolio', {controller: "Portfolio", action: "portfolio2014"}
+
+
+  #2013 links
 
   get "pages/home"
   get "/home", { controller: "Pages", action: "home" }
@@ -10,7 +17,7 @@ Roneeshwebsite::Application.routes.draw do
   get "/shop", { controller: "Pages", action: "shop" }
 
   get "pages/portfolio"
-  get "/portfolio", { controller: "Pages", action: "portfolio" }
+  # get "/portfolio", { controller: "Pages", action: "portfolio" }
 
   get "pages/about"
   get "/about", { controller: "Pages", action: "about" }
