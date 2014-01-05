@@ -1,11 +1,17 @@
 Roneeshwebsite::Application.routes.draw do
 
+  get "portfolio2014/about"
+
+  get "portfolio2014/work"
+
+  get "portfolio2014/contact"
+
   # Pages Controller Routes - Pages Controller is main site controller
-  root :to => 'pages#portfolio'
+  root :to => 'portfolio2014#work'
 
   # 2014 web portfolio
 
-  get '/portfolio', {controller: "Portfolio", action: "portfolio2014"}
+  get '/portfolio', {controller: "portfolio2014", action: "work"}
 
 
   #2013 links

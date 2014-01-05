@@ -1,0 +1,25 @@
+.body-nav-col.body-nav-col-px
+  %p= mail_to "roneesh@gmail.com", "roneesh@gmail.com", :cc => "oprah@oprah.com", :subject => "Dear Lover," 
+  %p= link_to "@Roneesh", "http://www.twitter.com/roneesh"
+  %p
+    %a(href='skype:roneesh?chat') Skype: roneesh
+  %p
+    %a(href='tel:+469-337-9220') Cell: 469-337-9220
+  %p Or send a message
+
+  = form_for @message, :as => :post, :url => "/contact", :html => {:class => "new_contact_form"} do |f| 
+
+    %p
+      = f.label :name
+      = f.text_field :name, :required => true
+
+    %p
+      = f.label :email
+      = f.text_field :email, :required => true
+
+    %p
+      = f.label :content, "Your message here." 
+      = f.text_area :content, size: "22x10", :required => true 
+
+    =submit_tag "Send Message", id: "message_submit"
+    %small to roneesh@gmail.com

@@ -16,13 +16,13 @@
 %body
   %nav
     .nav-col
-      %a(href="/about")Roneesh Vashisht
+      = link_to "Me", portfolio2014_about_path
     .nav-col
-      %a(href="/portfolio")Development Work
+      = link_to "Work", portfolio2014_work_path
     .nav-col
-      %a(href="/weather")The Weather
+      = link_to "Weather", weather_path
     .nav-col
-      %a(href="/contact")Contact
+      = link_to "Contact", portfolio2014_contact_path
 
 
   = yield
