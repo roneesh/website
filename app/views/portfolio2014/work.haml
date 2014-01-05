@@ -1,5 +1,5 @@
 .body-nav-col
-  %p Development
+  %p Development Work
   %p= link_to "Novi", "#novi"
   %p= link_to "Coolhouse Labs", "#coolhouse"
   %p= link_to "Lorious", "#lorious"
@@ -69,23 +69,42 @@
     %h2#trnk TRNK New York
     %h3 HTML/CSS, WordPress
     %p.work-description TRNK New York is the internet's premier place for men to furnish their home. I helped TRNK secure their WordPress site and coded a wordpress theme for them to use as part of their re-launch. 
+    .work-sample-column.clear
+      = image_tag "new_port_images/sized-trnk1.png"
+      = image_tag "new_port_images/sized-trnk2.png"
+      = image_tag "new_port_images/sized-trnk3.png"
+      = image_tag "new_port_images/sized-trnk4.png"
 
   .work-sample.clear
     %h2#partyblast PartyBlast!
     %h3 Sinatra, HAML/SASS (HTML/CSS), 500px API
     %p.work-description PartyBlast! is a Sinatra application that constantly refreshes with amazing imagery grabbed via the 500px API. It also allows a user to write a custom message that persists even as the images refresh. It's a great way to make sure no screen goes to wasted during a party! I coded the entire application.
+    .work-sample-column.clear
+      = image_tag "new_port_images/sized-partyblast1.png"
+      = image_tag "new_port_images/sized-partyblast2.png"
 
   .work-sample.clear
     %h2#careerpivot CareerPivot
     %h3 Ruby on Rails, Javascript, jQuery, Twitter Bootstrap
     %p.work-description CareerPivot was the first application I developed. It is a service that allows job applicants to create a "Pitch Page", so they can make the case for why they should be considered for jobs they might not be traditionally qualifed for. Pitch Pages allow users to upload work samples, embed video, and create question/answer prompts that discuss issues relevent to the employer. On this application I coded significantly on the back end implementing the described functionality, and also worked on the front-end design of the Pitch pages themselves.
+    .work-sample-column.clear
+      = image_tag "new_port_images/sized-careerpivot1.png"
+      = image_tag "new_port_images/sized-careerpivot2.png"
+      = image_tag "new_port_images/sized-careerpivot3.png"
 
   .work-sample.clear
     %h2#signineasy SignInEasy
     %h3 Ruby on Rails, Javascript, jQuery, HAML/SASS (HTML/CSS), Mandrill API, AlertCaster API
     %p.work-description SignInEasy is a startup I am currently working with. SignInEasy is a business services platform that let's office spaces manage guest registration, conference room booking and also includes features that let members communicate with the goal of activating their members/employees and forming a community. I architected the application and implemented major portions of it's front and back end functionality. 
+    .work-sample-column.clear
+      = image_tag "new_port_images/sized-signineasy1.png"
+      = image_tag "new_port_images/sized-signineasy2.png"
 
   .work-sample.clear
     %h2#propercss Proper CSS
     %h3 A Ruby on Rails Generator
-    %p.work-description ProperCSS is a Ruby on Rails generator that organizes the CSS in a project. I'm a big fan of clean, semantic CSS (and HTML too!). Proper CSS ensures that each project begins on the right foot. It organizes code into three folders: Base, Components and Modules. In the Base folder, there is a CSS reset file and files to define layout/grid systems, typography and SASS variables, which are used sitewide. Components has files that define the style for items used site-wide such as forms, lists, buttons, tables, etc. Finally, Modules contains files that style large portions of code such as headers, footers and asides. Organizing code this way makes writing and maintaining CSS much easier. Please fork the project and use it in your own Rails applications!
+    %p.work-description ProperCSS is a Ruby on Rails generator that organizes the CSS in a project. I'm a big fan of clean, semantic CSS (and HTML too!). Proper CSS ensures that each project begins on the right foot. It organizes code into three folders: Base, Components and Modules. In the Base folder, there is a CSS reset file and files to define layout/grid systems, typography and SASS variables, which are used sitewide. Components has files that define the style for items used site-wide such as forms, lists, buttons, tables, etc. Finally, Modules contains files that style large portions of code such as headers, footers and asides. Organizing code this way makes writing and maintaining CSS much easier. 
+    %p.work-description
+      Please fork the project and use it in your own Rails applications!
+    %p.github-link
+      = link_to "ProperCSS on Github", "https://github.com/roneesh/propercss"

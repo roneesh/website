@@ -1,16 +1,44 @@
 // Layout File
 
+$text-color: rgba(80,80,80,1)
+
+.body-nav-col p, a, li, input, small
+  font-family: 'League'
+  letter-spacing: 2px
+  font-size: 24px
+  color: $text-color
+
+table
+  color: $text-color
+
+.weather_container input, .github-link
+  font-family: 'oxygen'
+  font-size: 12px
+
+.github-link
+
+.weather_container h1, .weather_container p
+  color: $text-color
+
+#message_submit
+  font-size: 24px
+
+#contact-form
+  position: static
+  margin-top: 30px
+
+small
+  font-size: 18px
+
+p
+  margin: 5px 0
+
 nav 
   height: 45px
   color: black
-  background: rgba(230, 230, 230, 1)
-  // position: fixed
-  // top: 0
-  // left: 0
-  // right: 0
+  background: rgba(240, 240, 240, 1)
   a
     text-decoration: none
-    font-family: sans-serif
     -webkit-transition: color 0.5s
     transition: color 0.5s
   a:hover
@@ -20,17 +48,17 @@ nav
     width: 13.6666667%
     float: left
     padding-left: 3%
-    padding-top: 13px
+    padding-top: 9px
 
 .body-nav-col
   width: 13.6666667%
   float: left
-  padding-top: 25px
   padding-left: 3%
   position: fixed
   top: 75px
-  p, a
-    font-family: sans-serif
+  p:first-child
+    margin-bottom: 15px
+    
 
 .body-nav-col-px
   width: 200px
@@ -39,21 +67,17 @@ nav
   width: 83.3333333%
   float: left
   padding-left: 16.6666667%
-  h3
-    // padding-left: 16.6666667%
 
 .work-sample:first-child
-  // margin-top: 45px
+  margin-top: 10px
 
 .work-sample
-  // width: 63.6666668%
   width: 85%
-  // padding-left: 3%
-  // padding-left: 5%  
   margin: 45px auto
-  h2, h3
-    font-family: sans-serif
-    padding-left: 0 
+  h2, h3, p
+    padding-left: 0
+    font-family: 'Oxygen'
+
   .work-sample-column
     img
       margin: 25px 15px 0px 0px
@@ -83,7 +107,7 @@ nav
 // OLD PAGE REDESIGNS
 
 .new_contact_form
-  font-family: sans-serif
+  
   width: 100%
   input, textarea
     width: 100%
@@ -91,11 +115,11 @@ nav
 
 
 .new_message_submit
-  font-family: sans-serif
+  
 
 .abt-width
   width: 600px
 
 #site_technologies
-  font-family: sans-serif
+  
   list-style-position: inside
